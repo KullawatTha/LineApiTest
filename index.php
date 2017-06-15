@@ -13,6 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			$text2 = "May I help you?";
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -21,7 +22,7 @@ if (!is_null($events['events'])) {
                 		{'type' => 'text',
 				'text' => $text},
                 		{'type' => 'text',
-				'text' => "May I Help you?"}
+				'text' => $text2}
 			];
 
 
