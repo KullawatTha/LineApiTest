@@ -19,10 +19,10 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-                		{'type' => 'text',
-				'text' => $text},
-                		{'type' => 'text',
-				'text' => $text2}
+                		{'type' : 'text',
+				'text' : $text},
+                		{'type' : 'text',
+				'text' : $text2}
 			];
 
 
