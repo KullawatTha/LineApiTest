@@ -1,3 +1,7 @@
+<?php
+ 
+$strAccessToken = "gLcRV6o4L/xy4ipUoH4lAxeuN6WrFa1piofMuCpPOqR6QVcjNNZb32/01+aV3lbpBF17g9PElkTeR2cLpPp4svgnh8PH/KKAbI+z6ccsTk19PmehF5LE112wESkaaso0voZ2Dfqb8JrAfglCIPe+HwdB04t89/1O/w1cDnyilFU=";
+ 
 $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
@@ -36,3 +40,5 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
+
+?>
