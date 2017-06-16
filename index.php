@@ -33,6 +33,8 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['messages'][0]['stickerId'] = "1";
   $arrPostData['messages'][1]['type'] = "text";
   $arrPostData['messages'][1]['text'] = "ง่วงเลย";
+  $arrPostData['messages'][2]['type'] = "text";
+  $arrPostData['messages'][2]['text'] = "สวัสดี gID คุณคือ ".$arrJson['events'][0]['source']['groupId'];
 }
  
  
