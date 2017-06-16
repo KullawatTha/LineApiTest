@@ -10,18 +10,18 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+		if ($event['type'] == 'message' && $event['message']['type'] == 'location') {
 			// Get text sent
-			$text = $event['message']['text'];
+			$text = $event['message']['address'];
+            $la = $event['message']['latitude'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
 			$messages = [
-                		
-                		'type' => 'sticker',
-                		'packageId' => '1',
-                		'stickerId' => '1'
+                	'type' => 'location',
+                	'address' => $text,
+                	'latitude' => $la
 
 			];
 
