@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			$arrPostData = array();
 			$arrPostData['to'] = "Cd7d57caa22a05878f99a922646f37f6d";
 			$arrPostData['messages'][0]['type'] = "text";
-			$arrPostData['messages'][0]['text'] = "Lat:" + $latitude + "Lon:" + $longitude;
+			$arrPostData['messages'][0]['text'] = $event['message']['address'];
 			 
 			 
 			$ch = curl_init();
